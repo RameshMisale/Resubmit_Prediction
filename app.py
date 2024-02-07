@@ -58,7 +58,7 @@ st.markdown("")
 st.markdown("") 
 
 if profile_id.strip():  # Check if profile ID is entered and strip whitespace
-    df = pd.read_csv("Sample_dataset.csv")  # Load your local CSV file
+    df = pd.read_csv("Imp_data.csv")  # Load your local CSV file
  
     if profile_id.strip() in df['profile_id'].astype(str).values:  # Check if profile ID exists in the CSV
         st.write(f"Profile ID: {profile_id} found.")
